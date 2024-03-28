@@ -1,6 +1,6 @@
 package lang.object.poly;
 
-public class objectPolyExample1 {
+public class ObjectPolyExample1 {
     
     public static void main(String[] args) {
         Dog dog = new Dog();
