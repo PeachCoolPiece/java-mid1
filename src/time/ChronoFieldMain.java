@@ -1,0 +1,14 @@
+package time;
+
+import java.time.temporal.ChronoField;
+import java.time.temporal.ChronoUnit;
+
+public class ChronoFieldMain {
+    public static void main(String[] args) {
+        ChronoField[] values = ChronoField.values();
+        for (ChronoField value : values) {
+            System.out.println(value  + " = " + value.range());
+            
+        }
+    }
+}
