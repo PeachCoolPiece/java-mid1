@@ -10,5 +10,12 @@ public class FormattingMain2 {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
         String format = now.format(formatter);
         System.out.println("format = " + format);
+        
+        // 파싱 : 문자를 날짜와 시간으로
+        String dateTimeString = "2030-01-01 11:30:00";
+        DateTimeFormatter formatter1 = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+        LocalDateTime parse = LocalDateTime.parse(dateTimeString, formatter1);
+        System.out.println("parse = " + parse);
+        
     }
 }
